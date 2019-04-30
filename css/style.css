@@ -1,0 +1,965 @@
+/*ALL*/
+html, body{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	width: 100%;
+}
+/*DISPLAY NONE*/
+	.hamburger,
+	.trsebandsblock,
+	.mobilemenu,
+	.mobilecolumn1,
+	.mobilecolumn2,
+	.mobilecolumn3,
+	.flagicons{
+		display: none;
+	}
+/***HEADER***/
+	.header{
+		background-color: rgba(0,0,0,0.5);
+		top: 0;
+		left: 0;
+		position: fixed;
+		transition: .2s;
+		width: 100%;
+		z-index: 100;
+	}
+	.headercontainer{
+		margin: 0 auto;
+		max-width: 1200px;
+		overflow-x: hidden;
+	}
+	.headerbackground{
+		background-color: rgba(0,0,0,0.5);
+		transition: .2s;
+	}
+	.headerlogos{
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 90%;
+	}
+	.headerlogos img{
+		max-width: 100px;
+	}
+	.headerlogos a{
+		color: #fff;
+		text-decoration: none;
+	}
+	#htrse img{
+		max-width: 65px;
+	}
+	#h3kg img{
+		max-width: 70px;
+	}
+	#hmodeling{
+		font-family: 'Montserrat', sans-serif;
+	}
+/*M**MOBILE BURGER**M*/
+	.hamburger{
+	    width: 70px;
+	    height:70px;
+	    position: absolute;
+	    top: 35px;
+	    left:40px;
+	    z-index: 900;
+	}
+	.hamburger span{
+	    position: absolute;
+	    width: 70px;
+	    height: 6px;
+	    background-color: red;
+	}
+	.burger1{
+	    top: 10px;
+	    transition: .3s linear;
+	}
+	.burger2{
+	    top:27px; 
+	    transition: .3s linear;
+	}
+	.burger3{
+	    top: 44px; 
+	    transition: .3s linear;	
+	}
+	.hamburger:hover{
+		cursor: pointer;
+	}
+	.burger12{
+		background-color: #fff !important;
+	    position: absolute;
+	    transform: rotate(45deg) translate(12px,15px);
+	    transition: .3s linear;
+	}
+	.burger22{
+		background-color: #fff !important;
+		color: #fff;
+	    opacity: 0;
+	    transition: .3s linear;
+	}
+	.burger32{
+		background-color: #fff !important;
+		color: #fff;
+	    position: absolute;
+	    transform: rotate(-45deg) translate(9px,-10px);
+	    transition: .3s linear;
+	}
+	.burgercontainer{
+		position: relative;
+		width: 100%;
+	}
+	.burgerwrapper{
+		background-image: url('../media/images/poe/woodback.jpg');
+		border-bottom: 5px solid #fff;
+		border-top: 5px solid #fff;
+		margin: 0 auto;
+		padding: 40px 0;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+	}
+	.burgerwrapper p{
+		margin-bottom: 15px;
+	}
+	.burgerwrapper a{
+		color: #fff;
+		font-family: 'bn1';
+		font-size: 36px;
+		text-shadow: 3px 3px #000;
+		transition: .2s;    	
+	}
+	.burgersocialmedia i{
+		padding: 0 15px;
+	}
+	.burgerwrapper a:hover{
+		color: #770808;
+	}
+	.opacitycss{
+		opacity: .6;
+		transition: 1s;
+	}
+	}
+/*M**BACKGROUNDMOBILE**M*/
+	.mobilemenu{
+		background-color: blue;
+		height: 50px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		z-index: 1000;
+		color: red;
+	}
+/***MAIN BANNER***/
+	.mainbanner{
+		width: 100%;
+	}
+	.mainbannerphotos{
+		margin: 0 auto;
+		position: relative;
+		width: 100%;
+	}
+	.mainbannerphotos img{
+		max-width: 100%;
+		width: 100%;
+	}
+	.mainbannertext{
+		left: 6%;
+		position: absolute;
+		bottom: 20px;
+		max-width: 1200px;
+		z-index: 10;
+	}
+	.mainbannertext h1,
+	.mobilemenutitle h1{
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 55px;
+		font-weight: 100;
+		margin: 0;
+		text-shadow: 2px 2px 5px #000;
+		/*-webkit-text-stroke-width: 1px;
+	    -webkit-text-stroke-color: black;*/
+	}
+	.mainbannertext i{
+		color: #fff;
+		font-size: 35px;
+		padding-left: 4px;
+		text-shadow: 2px 2px 5px #000;
+		transition: 1s;
+	}
+	.mainbannertext i:hover{
+		color: rgba(255, 0, 0, 1);
+		transition: 1s;
+	}
+
+	#kenny1{
+		margin-top: -130px;
+	}
+	/*#kenny2{
+		margin-top: -80px;
+	}
+	#kenny3{
+		margin-top: -60px;
+	}
+	#kenny4{
+		margin-top: -150px;
+	}*/
+		/*SCROLL DOWN ARROW*/
+			.scroll-down {
+				position: absolute;
+				left: 50%;
+				bottom: 30px;
+				display: block;
+				text-align: center;
+				font-size: 20px;
+				z-index: 100;
+				text-decoration: none;
+				text-shadow: 0;
+				width: 30px;
+				height: 30px;
+				border-bottom: 5px solid #fff;
+				border-right: 5px solid #fff;
+				z-index: 9;
+				left: 50%;
+				transition: all 1s linear;
+				-webkit-transform: translate(-50%, 0%) rotate(45deg);
+				-moz-transform: translate(-50%, 0%) rotate(45deg);
+				transform: translate(-50%, 0%) rotate(45deg);
+				-webkit-animation: fade_move_down 2s ease-in-out infinite;
+				-moz-animation:    fade_move_down 2s ease-in-out infinite;
+				animation:         fade_move_down 2s ease-in-out infinite;
+			}
+			/*animated scroll arrow animation*/
+			@-webkit-keyframes fade_move_down {
+			  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+			  50%  { opacity: 1;  }
+			  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+			}
+			@-moz-keyframes fade_move_down {
+			  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+			  50%  { opacity: 1;  }
+			  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+			}
+			@keyframes fade_move_down {
+			  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+			  50%  { opacity: 1;  }
+			  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+			}
+/***BOURBON ST***/
+	.bourbonst,
+	.trse,
+	.threekg{
+		background-color: rgba(0,0,0,0);
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+	.bourboncontainer,
+	.threekgcontainer,
+	.modelingcontainer{
+		margin: 0 auto;
+		padding: 10px 0 100px 0;
+		text-align: center;
+		width: 100%;
+	}
+	#bourbonst{
+		margin-top: -80px;
+		padding-top: 80px;
+	}
+	#trse,
+	#threekg,
+	#theboybandnight,
+	#theronburgundys,
+	#thecountrynight,
+	#motownnation,
+	#thehairbandnight,
+	#modeling{
+		margin-top: -75px;
+		padding-top: 75px;
+	}
+	.bourbonlogo img{
+		max-width: 350px;
+	}
+	.trse img,
+	.threekg img{
+		max-width: 275px;
+	}
+	.bourbontitle,
+	.trsetitle,
+	.threekgtitle{
+		text-align: center;
+	}
+	.trsetitle{
+		padding-top: 20px;
+	}
+	.modelingtitle{
+		display: flex;
+		flex-direction: column;
+	}
+	h2{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 40px;
+		margin: 0;
+		padding: 10px 0 20px 0;
+	}
+	h3{
+		color: #000;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 70px;
+		margin: 0;
+	}
+	.bourbontitle a,
+	.trsetitle a,
+	.threekg a,
+	.modelingtitle a{
+		color: #000;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 22px;
+		text-decoration: none;
+		transition: 1s;
+	}
+	.bourbontitle a:hover,
+	.trsetitle a:hover,
+	.threekg a:hover,
+	.modeling a:hover{
+		color: rgba(255, 0, 0, 1);
+		transition: 1s;
+	}
+	.bourbontext,
+	.trsetext,
+	.threekgtext{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 20px;
+		margin: 0 auto;
+		max-width: 800px;
+		text-align: center;
+	}
+	.roombutton{
+		border: 2px solid #000;
+		margin: 0 auto;
+		transition: 1s;
+		width: 50%;
+	}
+	#roombutton{
+		color: #000;
+		font-family: 'Montserrat', sans-serif;
+		padding: 5px 10px;
+		text-decoration: none;
+	}
+	.roombutton:hover{
+		border: 2px solid red;
+		color: red;
+		cursor: pointer;
+		transition: 1s;
+	}
+/***TRSE***/
+	.trsecontainer{
+		margin: 0 auto;
+		padding: 10px 0 10px 0;
+		text-align: center;
+		width: 100%;
+	}
+	.trsebands{
+		width: 100%;
+	}
+	.trsebands img{
+		max-height: 125px;
+	}
+	.trsebandcolumn{
+		align-items: center;
+		display: flex;
+		justify-content: space-around;
+		padding: 30px 0 10px 0;
+	}
+	.band .jarallax{
+		min-height: 600px;
+	}
+	.band{
+		position: relative;
+	}
+	.bandinfo{
+		bottom: 2%;
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+	.bandinfocontainer{
+		align-items: flex-end;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 98%;
+	}
+	.bandtext{
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 24px;
+		padding-bottom: 10px;
+		text-shadow: 2px 2px 5px #000;
+		z-index: 9;
+	}
+	/*.bandtext p{
+		margin: 10px 0;
+	}
+	.bandtext a{
+		color: #fff;
+		text-decoration: none;
+		transition: 1s;
+	}*/
+	.bandtext i{
+		color: #fff;
+		font-size: 45px;
+		padding: 0 5px;
+		transition: 1s;
+	}
+	.bandtext i:hover{
+		transition: 1s;
+		z-index: 100;
+	}
+	#tbbnhover:hover{
+		color: #00A8BE;
+	}
+	#trbhover:hover{
+		color: #E4BD70;
+	}
+	#tcn1hover:hover{
+		color: red;
+	}
+	#tcn3hover:hover{
+		color: blue;
+	}
+	#mtnhover:hover{
+		color: #D129E0;
+	}
+	#thbnhover:hover{
+		color: red;
+	}
+	.bandlogo img{
+		max-width: 400px;
+	}
+	#logo300{
+		max-width: 300px;
+	}
+	#smallerlogo{
+		max-width: 350px;
+	}
+	.tbbnbackground{
+		background-color: #00A8BE;
+		transition: .2s;
+	}
+	.trbbackground{
+		background-color: #E4BD70;
+		transition: .2s;
+	}
+	.tcnbackground{
+		background-color: red;
+		transition: .2s;
+	}
+	.mtnbackground{
+		background-color: #D129E0;
+		transition: .2s;
+	}
+	.thbnbackground{
+		background-color: black;
+		transition: .2s;
+	}	
+/***MODELING***/
+	.photoscontainer{
+		display: flex;
+	}
+	.modelingphotos{
+		display: flex;
+		width: 20%;
+		z-index: 1;
+	}
+	.modelingcolumn img{
+		display: block;
+		max-width: 100%;
+		opacity: .3;
+		width: 100%;
+	}
+	.photos{
+		height: 100px;
+		position: relative;
+	}
+	.photoscontainer{
+		margin: 0 auto;
+		max-width: 1500px;
+	}
+	.modeling{
+		left: 0;
+		position: absolute;
+		top: 140px;
+		width: 100%;
+		z-index: 3;
+	}
+	/*.chicagoflag{
+		left: 0;
+		margin-top: 10px;
+		position: absolute;
+		top: 0;
+		z-index: 2;
+	}
+	.chicagoflag img{
+		max-width: 100%;
+		opacity: .2;
+	}*/
+	#modelingtitle2,
+	#agencies{
+		font-family: 'Montserrat', sans-serif;
+    	font-size: 36px;
+	}
+	.modelingheading p{
+		font-size: 5px;
+		margin: 30px 0;
+		padding: 10px 0;
+	}
+	.modelingheading{
+		align-items: center;
+		display: flex;
+		margin: 0 auto;
+		justify-content: center;
+		width: 400px;
+	}
+	.modelheadingcontainer{
+		margin: 0 auto;
+		width: 100%;
+	}
+	.modelingheading img{
+		max-width: 130px;
+	}
+	.modelingheading p{
+		width: 100%;
+	}
+	.modelagencies p{
+		margin: 0;
+		padding: 8px 0;
+	}
+	.modelagencies a{
+		font-size: 24px;
+	}
+	#agencies{
+		margin: 0 auto;
+		padding-bottom: 10px;
+		width: 100%;
+	}
+/***FOOTER***/
+	.footer{
+		background-color: #000;
+		height: 70px;
+		margin: -60px auto 0 auto;
+		position: relative;
+		max-width: 100%;
+		z-index: 100;
+	}
+/***MEDIA QUERIES***/
+@media(max-width:1180px){
+	.trsebands img{
+		max-height: 110px;
+	}
+	}
+@media(max-width:1170px){
+	.column3,
+	.column4{
+		display: none;
+	}
+	.modelingphotos{
+		width: 25%;
+	}
+	}
+@media(max-width:1090px){
+	.trsebands img{
+		max-width: 175px;
+		min-width: 175px;
+	}
+	}
+@media(max-width:1000px){
+	.bandlogo img{
+		max-width: 300px;
+	}
+	#logo300{
+		max-width: 250px;
+	}
+	}	
+@media(max-width:900px){
+	.trsetitle{
+		padding-bottom: 20px;
+	}
+	.trsebands{
+		display: none;
+	}
+	.trsebandsblock{
+		display: flex;
+		width: 100%;
+	}
+	.trsebandcolumnblock{
+		width: 100%;
+	}
+	.trsebandbreak{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 700px;
+	}
+	.trsebandbreak img{
+		max-width: 300px;
+		min-width: 300px;
+	}
+	.trsebandbreak1{
+		padding: 10px 0;
+	}
+	.trsebandbreak2{
+		padding-top: 10px;
+	}
+	#trsebottombandlogo{
+		justify-content: center;
+	}
+	#tcnblockimage{
+		max-width: 290px;
+		min-width: 290px;
+	}
+	.column5{
+		display: none;
+	}
+	.modelingphotos{
+		width: 33.3%;
+	}
+	}
+@media(max-width:830px){
+	.bourbontext,
+	.trsetext,
+	.threekgtext{
+		padding: 0 20px;
+	}
+	}
+@media(max-width:800px){
+	.bandlogo img{
+		max-width: 250px;
+	}
+	#logo300{
+		max-width: 175px;
+	}
+	}
+@media(max-width:730px){
+	.trsebandbreak{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 600px;
+	}
+	.trsebandbreak img{
+		max-width: 260px;
+		min-width: 260px;
+	}
+	#tcnblockimage{
+		max-width: 250px;
+		min-width: 250px;
+	}
+	}
+@media(max-width:700px){
+	.bandtext i{
+		font-size: 40px;
+	}
+	}
+@media(max-width:680px){
+	.column2{
+		display: none;
+	}
+	.modelingphotos{
+		width: 50%;
+	}
+	}
+@media(max-width:635px){
+	.trsebandsblock{
+		display: none;
+	}
+	.trsebands{
+		display: flex;
+	}
+	.trsebandcolumn{
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+	}
+	.trsebands img{
+		max-height: none;
+		max-width: 350px;
+		min-width: 350px;
+		padding: 20px 0;
+	}
+	#thbnmainlogo,
+	#mtnmainlogo,
+	#tcnmainlogo{
+		max-width: 300px;
+		min-width: 300px;
+	}
+	}
+@media(max-width:580px){
+	.trsebands img{
+		max-width: 290px;
+		min-width: 290px;
+	}
+	.trsebands#thecountrynight,
+	.trsebands#thehairbandnight{
+		max-width: 275px;
+		min-width: 275px;
+	}
+	}
+/***IPHONE PORTRAIT***/
+@media only screen and (min-device-width : 375px) and (max-device-width : 736px){
+	*{
+		overflow-x: hidden;
+	}
+	/***DISPLAY NONE***/
+	.header,
+	.mainbannertext,
+	.trsebands,
+	.modelingphotos{
+		display: none;
+	}
+	.hamburger{
+		display: block;
+	}
+	.mobilemenu{
+		background-color: rgba(0,0,0,0.5);
+		box-shadow: 2px 2px 2px red;
+		height: 1445px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		z-index: 800;
+		width: 100%;
+	}
+	.mobilehover{
+		margin-top: 150px;
+		transition: .5s;
+	}
+	.mobilemenucontainer{
+		height: 100%;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		width: 90%;
+		z-index: 900;
+	}
+	.mobilemenulogos{
+		padding-top: 100px;
+	}
+	.mobilemenulogosbox{
+		align-items: center;
+		display: flex;
+		justify-content: space-around;
+	}
+	.mobilemenulogosrow1,
+	.mobilemenulogosrow2{
+		display: flex;
+		flex-direction: column;
+		height: 600px;
+		justify-content: space-around;
+	}
+	.mobilemenutitle{
+		margin: 150px 0;
+	}
+	.mobilemenutitle h1{
+		font-size: 120px;
+		padding-bottom: 10px;
+	}
+	#modelingmenu{
+		padding-top: 60px;
+	}
+	/***MOBILE SOCIAL MEDIA***/
+	.mobilemenusocialmedia{
+		width: 100%;
+	}
+	.mobilemenusocialmediacontainer{
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		width: 98%;
+	}
+	.mobilemenusocialmediaicons{
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+	.mobilemenu i{
+		color: #fff;
+		font-size: 70px;
+		padding: 5px 5px 5px 5px;
+		text-shadow: 1px 2px 5px #000;	
+	}
+	.flagicons img{
+		max-width: 300px;
+	}
+	#middlemobilesocialmedia{
+		padding: 0 15px;
+	}
+	.mobilemenulogos img{
+		max-height: 220px;
+		padding: 30px 0;
+	}
+
+	.mainbannerphotos{
+		height: 1550px;
+	}
+	#kenny1{
+		margin-left: 30px;
+		margin-top: 200px;
+		transform: scale(2.8);
+	}
+	#bourbonst{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#trse,
+	#threekg,
+	#theboybandnight,
+	#theronburgundys,
+	#thecountrynight,
+	#motownnation,
+	#thehairbandnight,
+	#modeling{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.scroll-down {
+		position: absolute;
+		left: 44.5%;
+		bottom: 70px;
+		display: block;
+		text-align: center;
+		font-size: 200px;
+		z-index: 100;
+		text-decoration: none;
+		text-shadow: 0;
+		width: 100px;
+		height: 100px;
+		border-bottom: 5px solid #fff;
+		border-right: 5px solid #fff;
+		z-index: 9;		
+	}
+	h2{
+		font-size: 80px;
+		padding: 40px 0;
+	}
+	.bourbontitle a,
+	.trsetitle a,
+	.threekg a, 
+	.modelingtitle a{
+		font-size: 50px;
+	}
+	#kennyemail{
+		padding-top: 20px;
+	}
+/***BOURBON ST MOBILE***/
+	.bourbonlogo img{
+		max-width: 700px;
+	}
+	.bourbontext,
+	.trsetext{
+		font-size: 45px;
+		padding: 20px 0;
+	}
+	.bourbontext p,{
+		margin: 0;
+	}
+	.roombutton{
+		border-width: 5px;
+		padding: 10px 20px;
+	}
+/***TRSE MOBILE***/
+	.trselogo img{
+		max-width: 600px;
+		padding-top: 10px;
+	}
+	#trsecom{
+		font-size: 40px;
+	}
+	.trsebandsblock{
+		display: flex;
+		margin-top: 50px;
+	}
+	.trsebandcolumnblock{
+		margin: 0 auto;
+		width: 80%;
+	}
+	.trsebandsblock img{
+		max-width: 350px;
+	}
+	.trsebandbreak1,
+	.trsebandbreak2{
+		display: flex;
+		justify-content: space-between;
+	}
+	.trsebandbreak2{
+		padding-top: 40px;
+	}
+	.bandtext{
+		padding-bottom: 30px;
+	}
+	.bandtext i{
+		font-size: 85px;
+	}
+	.bandlogo img{
+		max-width: 400px;
+	}
+	#logo300{
+		max-width: 350px;
+	}
+/***3KG***/
+	.threekg{
+		height: 100%;
+	}
+	.threekglogo img{
+		max-width: 600px;
+		padding-top: 20px;
+	}
+	.threekgtext{
+		font-size: 45px;
+	}
+/***MODELING***/
+	.photos{
+		height: 1800px;
+	}
+	.photoscontainer{
+		height: 100%;
+	}
+	.modeling{
+		height: 1200px;
+		top: 100px;
+	}
+	.modelingcontainer{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		padding: 0;
+	}
+	.modelingphotosmobile{
+		display: flex;
+	}
+	.mobilecolumn1,
+	.mobilecolumn2,
+	.mobilecolumn3{
+		display: block;
+		overflow-y: hidden;
+		width: 33.3%;
+	}
+	.modelinglogo h3{
+		font-size: 150px;
+		font-weight: 100;
+		padding-bottom: 20px;
+	}
+	.modelingheading{
+		padding-top: 50px;
+	}
+	.modeling .modelingtitle a{
+		font-size: 60px;
+	}
+	.modelingheading #agencies{
+		font-size: 80px;
+		padding-bottom: 90px;
+	}
+	.modelagencies p{
+		padding-bottom: 50px;
+	}
