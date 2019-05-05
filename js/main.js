@@ -25,7 +25,6 @@ $(document).ready(function(){
 	$menu.click(function(){
 		$header.fadeToggle(1000);
 	});
-
 	$theboybandnight.waypoint(function(){
 		$header.toggleClass('tbbnbackground');
 	});
@@ -42,7 +41,7 @@ $(document).ready(function(){
 		$header.toggleClass('thbnbackground');
 	});
 	$threekg.waypoint(function(){
-		$header.toggleClass('headerbackground');
+		$header.toggleClass('hback');
 	});
 	$hamburger.click(function(){
       $burger1.toggleClass('burger12');
@@ -50,22 +49,53 @@ $(document).ready(function(){
       $burger3.toggleClass('burger32');
       $burgerwrapper.slideToggle(500);
       $mobilemenu.fadeToggle(500);
-      /*$mobileimages.animate({
-      	'margin-bottom': '70px'
-	  }, 1000);
-    });
-    $hamburger.click(function(){
-    	$mobilemenulogos.animate({
-      	opacity: '1'
-	  }, 1500);*/
     });
 
-	/*$(window).scroll(function(direction){
-	    if ($(this).scrollTop() > 30) {
-	       $('.scroll-down').fadeOut();
+	$(window).scroll(function(direction){
+	    if ($(this).scrollTop() > 110) {
+	       $('.arrowtotop').addClass('arrowon');
 	    }
 	    else {
-	       $('.scroll-down').fadeIn();
+	       $('.arrowtotop').removeClass('arrowon');
 	    }
-	});*/
+	});
+});
+
+$(document).ready(function(){
+	$('#pcolumn1').slick({
+	  fade: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  autoplay: true,
+	  autoplaySpeed: 2300,
+	  infinite: true,
+	});
+	$('#pcolumn2').slick({
+	  fade: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  autoplay: true,
+	  autoplaySpeed: 3400,
+	  infinite: true,
+	});
+	$('#pcolumn3').slick({
+	  fade: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  autoplay: true,
+	  autoplaySpeed: 1700,
+	  infinite: true,
+	});
+	$('#pcolumn4').slick({
+	  fade: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  autoplay: true,
+	  autoplaySpeed: 1700,
+	  infinite: true,
+	});
 });
