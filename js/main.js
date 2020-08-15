@@ -61,6 +61,21 @@ $(document).ready(function(){
 	});
 });
 
+/*MORTAL KOMBAT*/
+	var $chevronblack = $('.chevron-black');
+	var $chevrongold = $('.chevron-gold');
+	var $mortalkombattext = $('.mortal-kombat-text');
+	var $mortalkombatarrow = $('.mortal-kombat-shape-2 img');
+	var $mortalkombatshape1 = $('.mortal-kombat-shape-1');
+	var $mortalkombattextbox = $('.mortal-kombat-text-box');
+
+	$mortalkombattextbox.hover(function(){
+		$mortalkombatshape1.toggleClass('mortal-kombat-hover');
+		$mortalkombattext.toggleClass('mortal-kombat-hover-text');
+		$chevronblack.toggleClass('chevron-black-toggle');
+		$chevrongold.toggleClass('chevron-gold-toggle');
+	});
+
 $(document).ready(function(){
 	$('#pcolumn1').slick({
 	  fade: true,
